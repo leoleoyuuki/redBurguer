@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section className="relative h-[70vh] min-h-[450px] w-full flex items-center justify-center text-center text-white overflow-hidden p-0">
-          <div className="absolute inset-0 z-[-1]">
+          <div className="absolute inset-0 z-[1]">
             <Image
               src="https://images.pexels.com/photos/32862018/pexels-photo-32862018.jpeg"
               alt="Um delicioso hambúrguer gourmet"
