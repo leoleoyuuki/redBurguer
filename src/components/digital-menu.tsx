@@ -40,7 +40,7 @@ export default function DigitalMenu() {
           Todas as nossas deliciosas opções em um só lugar, feitas com os melhores ingredientes.
         </p>
         <Tabs defaultValue="burgers" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-3 bg-background shadow-inner">
+          <TabsList className="grid h-auto w-full grid-cols-1 bg-background shadow-inner sm:h-10 sm:grid-cols-3">
             <TabsTrigger value="burgers" className="font-bold">Hambúrgueres</TabsTrigger>
             <TabsTrigger value="sides" className="font-bold">Acompanhamentos</TabsTrigger>
             <TabsTrigger value="drinks" className="font-bold">Bebidas</TabsTrigger>
