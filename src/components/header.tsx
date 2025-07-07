@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <a href="/" className="mr-6 flex items-center space-x-2">
             <Image
-              src="https://placehold.co/40x40.png"
+              src="/images/logo.jpg"
               alt="Red Burguer Gourmet Logo"
               data-ai-hint="burger logo"
               width={40}

@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center mb-4 space-x-2">
               <Image
-                src="https://placehold.co/40x40.png"
+                src="/images/logo.jpg"
                 alt="Red Burguer Gourmet Logo"
                 data-ai-hint="burger logo"
                 width={40}
