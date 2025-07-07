@@ -2,18 +2,18 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const menuItems = [
-  { name: "Classic Bliss", image: "https://placehold.co/600x400.png", hint: "classic cheeseburger" },
+  { name: "Red Clássico", image: "https://placehold.co/600x400.png", hint: "classic cheeseburger" },
   { name: "Bacon Bomb", image: "https://placehold.co/600x400.png", hint: "bacon burger" },
   { name: "Veggie Delight", image: "https://placehold.co/600x400.png", hint: "veggie burger" },
-  { name: "Spicy Volcano", image: "https://placehold.co/600x400.png", hint: "spicy burger" },
+  { name: "Vulcão Picante", image: "https://placehold.co/600x400.png", hint: "spicy burger" },
 ];
 
 export default function MenuShowcase() {
   return (
     <section id="menu-showcase" className="container">
-      <h2 className="section-title text-primary">Our Masterpieces</h2>
+      <h2 className="section-title text-primary">Nossas Obras-Primas</h2>
       <p className="section-subtitle">
-        A sneak peek at our most popular, mouth-watering creations.
+        Uma espiada em nossas criações mais populares e de dar água na boca.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {menuItems.map((item) => (

@@ -15,19 +15,19 @@ const testimonials = [
     name: "Julia R.",
     avatar: "https://placehold.co/100x100.png",
     hint: "woman portrait",
-    text: "The Bacon Bomb was life-changing. I've never had a burger this good. I'll be back every week!",
+    text: "O Bacon Bomb mudou minha vida. Nunca comi um hambúrguer tão bom. Voltarei toda semana!",
   },
   {
-    name: "Mark T.",
+    name: "Marcos T.",
     avatar: "https://placehold.co/100x100.png",
     hint: "man portrait",
-    text: "As a vegetarian, finding a truly great veggie burger is rare. The Veggie Delight at Burger Bliss is the absolute best!",
+    text: "Como vegetariano, é raro encontrar um hambúrguer vegetariano realmente ótimo. O Veggie Delight do Red Burguer é o melhor de todos!",
   },
   {
     name: "Samantha K.",
     avatar: "https://placehold.co/100x100.png",
     hint: "person smiling",
-    text: "Amazing atmosphere and even better food. The staff is so friendly. Perfect spot for a family dinner.",
+    text: "Ambiente incrível e comida ainda melhor. A equipe é muito simpática. Lugar perfeito para um jantar em família.",
   },
 ];
 
@@ -42,9 +42,9 @@ const StarRating = ({ rating = 5 }) => (
 export default function Testimonials() {
   return (
     <section id="testimonials" className="container">
-      <h2 className="section-title">What Our Fans Say</h2>
+      <h2 className="section-title">O Que Nossos Fãs Dizem</h2>
       <p className="section-subtitle">
-        Don't just take our word for it. Here's what our customers think.
+        Não acredite apenas na nossa palavra. Veja o que nossos clientes pensam.
       </p>
       <Carousel
         opts={{

@@ -1,4 +1,4 @@
-import AiBurgerBuilder from '@/components/ai-burger-builder';
+import AiAssistant from '@/components/ai-burger-builder';
 import DigitalMenu from '@/components/digital-menu';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
@@ -13,7 +13,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <MenuShowcase />
-        <AiBurgerBuilder />
+        <AiAssistant />
         <Testimonials />
         <DigitalMenu />
       </main>

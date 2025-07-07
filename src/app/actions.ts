@@ -1,26 +1,26 @@
 'use server'
 
-import { burgerBuilder, type BurgerBuilderInput } from '@/ai/flows/burger-builder'
+import { restaurantAssistant, type RestaurantAssistantInput } from '@/ai/flows/burger-builder'
 import { z } from 'zod'
 
-const BurgerBuilderSchema = z.object({
-  preferences: z.string().min(10, {
-    message: 'Please describe your burger preferences in at least 10 characters.',
+const AssistantSchema = z.object({
+  question: z.string().min(5, {
+    message: 'Por favor, faça uma pergunta com pelo menos 5 caracteres.',
   }),
 })
 
 interface FormState {
     formError?: string;
     serverError?: string;
-    recommendation?: string | null;
+    answer?: string | null;
 }
 
-export async function getBurgerRecommendation(
+export async function getAIResponse(
   prevState: FormState,
   formData: FormData
 ): Promise<FormState> {
-  const parsed = BurgerBuilderSchema.safeParse({
-    preferences: formData.get('preferences'),
+  const parsed = AssistantSchema.safeParse({
+    question: formData.get('question'),
   })
 
   if (!parsed.success) {
@@ -28,11 +28,11 @@ export async function getBurgerRecommendation(
   }
 
   try {
-    const input: BurgerBuilderInput = { preferences: parsed.data.preferences };
-    const result = await burgerBuilder(input);
-    return { recommendation: result.recommendation };
+    const input: RestaurantAssistantInput = { question: parsed.data.question };
+    const result = await restaurantAssistant(input);
+    return { answer: result.answer };
   } catch (e) {
     console.error(e);
-    return { serverError: 'Our AI chef is busy... Please try again in a moment.' }
+    return { serverError: 'Nosso assistente IA está ocupado... Por favor, tente novamente em um momento.' }
   }
 }

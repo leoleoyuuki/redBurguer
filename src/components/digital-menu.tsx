@@ -3,21 +3,21 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const menu = {
   burgers: [
-    { name: "Classic Bliss", description: "Our signature beef patty, cheddar, lettuce, tomato, and bliss sauce.", price: "$12.99" },
-    { name: "Bacon Bomb", description: "Beef patty, crispy bacon, smoked gouda, and BBQ sauce.", price: "$14.99" },
-    { name: "Veggie Delight", description: "House-made black bean patty, avocado, and sprouts.", price: "$11.99" },
-    { name: "Spicy Volcano", description: "Spicy chorizo-infused patty, pepper jack, jalapeños, and fiery aioli.", price: "$13.99" },
-    { name: "Mushroom Melt", description: "Beef patty, swiss cheese, sauteed mushrooms, and garlic aioli.", price: "$13.99" },
+    { name: "Red Clássico", description: "Pão, burger de costela, queijo prato, alface, tomate e nosso molho especial.", price: "R$32,90" },
+    { name: "Bacon Bomb", description: "Pão, burger de costela, bacon crocante, queijo cheddar e molho barbecue.", price: "R$36,90" },
+    { name: "Veggie Delight", description: "Pão, burger de grão de bico, abacate, brotos e maionese vegana.", price: "R$30,90" },
+    { name: "Vulcão Picante", description: "Pão, burger de calabresa, queijo prato, jalapeños e maionese picante.", price: "R$34,90" },
+    { name: "Mushroom Melt", description: "Pão, burger de costela, queijo suíço, cogumelos salteados e maionese de alho.", price: "R$34,90" },
   ],
   sides: [
-    { name: "Bliss Fries", description: "Perfectly seasoned shoestring fries.", price: "$4.99" },
-    { name: "Onion Rings", description: "Crispy, golden-brown onion rings.", price: "$5.99" },
-    { name: "Sweet Potato Fries", description: "A sweet and savory alternative.", price: "$5.99" },
+    { name: "Fritas da Casa", description: "Batatas fritas fininhas e perfeitamente temperadas.", price: "R$14,90" },
+    { name: "Anéis de Cebola", description: "Anéis de cebola crocantes e dourados.", price: "R$16,90" },
+    { name: "Batata Doce Frita", description: "Uma alternativa doce e salgada.", price: "R$16,90" },
   ],
   drinks: [
-    { name: "Soda Fountain", description: "Coke, Diet Coke, Sprite, etc.", price: "$2.99" },
-    { name: "Local Craft Beer", description: "Rotating selection from local breweries.", price: "$7.99" },
-    { name: "Thick Milkshake", description: "Vanilla, Chocolate, or Strawberry.", price: "$6.99" },
+    { name: "Refrigerante", description: "Coca-Cola, Coca-Cola Zero, Guaraná, etc.", price: "R$7,90" },
+    { name: "Cerveja Artesanal", description: "Seleção rotativa de cervejarias locais.", price: "R$19,90" },
+    { name: "Milkshake", description: "Baunilha, Chocolate ou Morango.", price: "R$22,90" },
   ],
 };
 
@@ -35,15 +35,15 @@ export default function DigitalMenu() {
   return (
     <section id="menu" className="bg-card">
       <div className="container">
-        <h2 className="section-title">Digital Menu</h2>
+        <h2 className="section-title">Cardápio Digital</h2>
         <p className="section-subtitle">
-          All our delicious options in one place, crafted with the finest ingredients.
+          Todas as nossas deliciosas opções em um só lugar, feitas com os melhores ingredientes.
         </p>
         <Tabs defaultValue="burgers" className="w-full max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-3 bg-background shadow-inner">
-            <TabsTrigger value="burgers" className="font-bold">Burgers</TabsTrigger>
-            <TabsTrigger value="sides" className="font-bold">Sides</TabsTrigger>
-            <TabsTrigger value="drinks" className="font-bold">Drinks</TabsTrigger>
+            <TabsTrigger value="burgers" className="font-bold">Hambúrgueres</TabsTrigger>
+            <TabsTrigger value="sides" className="font-bold">Acompanhamentos</TabsTrigger>
+            <TabsTrigger value="drinks" className="font-bold">Bebidas</TabsTrigger>
           </TabsList>
           <div className="mt-4">
               <TabsContent value="burgers">

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-[-1]">
         <Image
           src="https://placehold.co/1920x1080.png"
-          alt="A delicious gourmet burger"
+          alt="Um delicioso hambúrguer gourmet"
           data-ai-hint="gourmet burger"
           fill
           className="object-cover"
@@ -17,13 +17,15 @@ export default function Hero() {
       </div>
       <div className="z-10 container px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl md:text-7xl font-bold font-headline drop-shadow-lg">
-          Taste the Bliss in Every Bite
+          Sinta o Sabor em Cada Mordida
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl drop-shadow-md">
-          Crafted with passion, served with love. Discover your new favorite burger today.
+          Feito com paixão, servido com amor. Descubra seu novo hambúrguer favorito hoje.
         </p>
-        <Button size="lg" className="mt-8 font-bold text-lg bg-accent text-accent-foreground hover:bg-accent/90 transform transition-transform hover:scale-105 shadow-xl">
-          Order Your Bliss
+        <Button asChild size="lg" className="mt-8 font-bold text-lg bg-accent text-accent-foreground hover:bg-accent/90 transform transition-transform hover:scale-105 shadow-xl">
+          <a href="#menu">
+            Ver Cardápio
+          </a>
         </Button>
       </div>
     </section>
