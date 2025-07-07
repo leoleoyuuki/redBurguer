@@ -1,5 +1,6 @@
-import { MapPin, Phone, Clock, Sandwich, UtensilsCrossed } from "lucide-react";
+import { MapPin, Phone, Clock, UtensilsCrossed } from "lucide-react";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 const footerSections = [
     {
@@ -25,8 +26,15 @@ export default function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex items-center mb-4">
-              <Sandwich className="h-8 w-8 mr-2 text-primary" />
+            <div className="flex items-center mb-4 space-x-2">
+              <Image
+                src="https://placehold.co/40x40.png"
+                alt="Red Burguer Gourmet Logo"
+                data-ai-hint="burger logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
               <span className="font-bold font-headline text-2xl">Red Burguer Gourmet</span>
             </div>
             <p className="text-muted-foreground">O destino definitivo para os amantes de hambúrguer.</p>

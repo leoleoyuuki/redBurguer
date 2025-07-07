@@ -1,12 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { Sandwich } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <a href="/" className="mr-6 flex items-center space-x-2">
-            <Sandwich className="h-6 w-6 text-primary" />
+            <Image
+              src="https://placehold.co/40x40.png"
+              alt="Red Burguer Gourmet Logo"
+              data-ai-hint="burger logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             <span className="font-bold font-headline text-lg">Red Burguer Gourmet</span>
         </a>
         <div className="flex flex-1 items-center justify-end space-x-2">
