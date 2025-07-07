@@ -2,10 +2,10 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const menuItems = [
-  { name: "Red Clássico", image: "https://placehold.co/600x400.png", hint: "classic cheeseburger" },
-  { name: "Bacon Bomb", image: "https://placehold.co/600x400.png", hint: "bacon burger" },
-  { name: "Veggie Delight", image: "https://placehold.co/600x400.png", hint: "veggie burger" },
-  { name: "Vulcão Picante", image: "https://placehold.co/600x400.png", hint: "spicy burger" },
+  { name: "Billy Ray", image: "/images/billy-ray.jpg", hint: "billy ray" },
+  { name: "Brad Paisley", image: "/images/brad-paisley.jpg", hint: "brad paisley" },
+  { name: "Elvis", image: "/images/elvis.jpg", hint: "elvis" },
+  { name: "John Mayer", image: "/images/john-mayer.jpg", hint: "john mayer" },
 ];
 
 export default function MenuShowcase() {
