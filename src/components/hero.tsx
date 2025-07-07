@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative h-[70vh] min-h-[450px] w-full flex items-center justify-center text-center text-white overflow-hidden p-0">
       <div className="absolute inset-0 z-[-1]">
         <Image
-          src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
+          src="/images/pexels-umutsrln-32862018.jpg"
           alt="Um delicioso hambúrguer gourmet"
           data-ai-hint="gourmet burger"
           fill
